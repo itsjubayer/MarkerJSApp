@@ -1,0 +1,16 @@
+﻿@page "/MarkerJS"
+@using Markerjs.Blazor.Components
+
+@*LINK: https://github.com/keoy7am/Markerjs.Blaozr*@
+<h3>MarkerArea</h3>
+<h3>TestMarkerJS</h3>
+<MarkerArea @ref="_markerArea" Src="_content/Markerjs.Blazor/test.jpg" Class="img-fluid" Style="max-width:50%;" JsonText="@JsonText" />
+<MarkerView @ref="_markerView" Src="_content/Markerjs.Blazor/test.jpg" Class="img-fluid" Style="max-width:50%;" JsonText="@JsonText" />
+@code {
+    private MarkerArea? _markerArea { get; set; }
+    private MarkerView? _markerView { get; set; }
+    private string? JsonText { get; set; }
+
+
+}
+
